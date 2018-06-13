@@ -1,1 +1,5 @@
-"# PyRedditBot" 
+# PyRedditBot
+
+## Installation
+
+`pip install -r requirements.txt`
