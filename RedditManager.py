@@ -33,6 +33,10 @@ class RedditManager():
 
     def is_repost(self, post, sub):
         for p in self.find_posts_by_title(post.title, sub):
-            if p.id != post.id and p.title == post.title and post.created > p.created:
+            if p.id != post.id and post.created > p.created and self.is_post_similar(p, post):
                 return True
         return False
+
+    # TODO: Improve Post Similarity Function
+    def is_post_similar(self, p1, p2):
+        return p1.title == p2.title and (p1.selftext == p2.selftext) or (p1.url == p2.url)
