@@ -1,0 +1,13 @@
+[Reddit]
+client_id = <ENTER_REDDIT_ID>
+client_secret = <ENTER_REDDIT_SECRET>
+password = <ENTER_PASSWORD>
+user_agent = <ENTER_BOT_NAME>
+username = <ENTER_USERNAME>
+skip_selftext = True
+skip_url = False
+selftext_weight = 5
+url_weight = 100
+title_weight = 10
+minimum_similarity_percentage = 80
+number_similar_posts = 5
